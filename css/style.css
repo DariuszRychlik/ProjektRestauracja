@@ -1,0 +1,1021 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;500;600&family=Rubik:wght@300;400;500;600&display=swap");
+
+:root {
+  --antiquewhite: antiquewhite;
+  --yellow: yellow;
+  --red: red;
+  --white: white;
+  --black: black;
+  --light-color: rgba(211, 211, 211, 0.849);
+  --gray: gray;
+  --border: 0.2rem solid var(--black);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+*::selection {
+  background-color: var(--red);
+  color: var(--black);
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+  border-radius: 1rem;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+section {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 2600px;
+}
+
+/******************************* Przyciski start *****************************************/
+
+.btn,
+.delete-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  margin-bottom: 2rem;
+  border: var(--border);
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  color: var(--white);
+}
+.delete-btn:hover {
+  background-color: var(--black);
+}
+
+.btn {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.delete-btn {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+/***************************************** Przyciski koniec ***********************************************/
+
+.facility .slide {
+  margin-bottom: 4rem;
+  border: var(--border);
+  padding: 2rem;
+  text-align: center;
+}
+
+.facility .slide img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.facility .slide p {
+  padding: 1.5rem 0;
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+
+.facility .slide .stars {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: var(--border);
+}
+
+.facility .slide .stars i {
+  font-size: 1.8rem;
+  color: var(--yellow);
+}
+
+.facility .slide h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: var(--black);
+  text-underline-offset: 1rem;
+}
+
+.empty {
+  border: var(--border);
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--red);
+  text-transform: capitalize;
+  width: 100%;
+}
+
+/*************************** tost start********************************/
+
+.message {
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  background-color: var(--yellow);
+  text-transform: uppercase;
+  border: var(--border);
+  border-radius: 5rem;
+}
+
+.message span {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.message i {
+  font-size: 3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.message i:hover {
+  color: var(--red);
+}
+
+/***************************tost koniec********************************/
+
+/***************************nagłówek start********************************/
+
+header {
+  position: sticky;
+  z-index: 1000;
+  background-color: var(--gray);
+  border-bottom: var(--border);
+  top: 0;
+  left: 0;
+}
+
+header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  text-transform: uppercase;
+}
+
+header .flex .pot {
+  width: 18rem;
+  height: 12rem;
+  margin-bottom: 2rem;
+}
+
+header .flex .pot:hover {
+  background-color: var(--white);
+}
+
+header .flex a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+header .flex .navbar a {
+  font-size: 2rem;
+  color: var(--black);
+  margin: 1rem;
+}
+
+header .flex .navbar a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+header .flex .icons > * {
+  font-size: 2.5rem;
+  color: var(--black);
+  cursor: pointer;
+  margin-left: 1.7rem;
+}
+
+header .flex .icons span {
+  font-size: 1.5rem;
+  background-color: var(--light-color);
+  border-radius: 50%;
+  margin-left: -2rem;
+  top: -1.5rem;
+  position: relative;
+  border: var(--border);
+}
+
+header .flex .icons > *:hover {
+  color: var(--white);
+}
+
+header .flex .profile {
+  position: absolute;
+  top: 120%;
+  right: 2rem;
+  border: var(--border);
+  border-radius: 5rem;
+  background-color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  width: 30rem;
+  display: none;
+  animation: fadeIn 0.2s linear;
+}
+
+header .flex .profile.active {
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(1rem);
+  }
+}
+
+header .flex .profile .name {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+header .flex .profile .account {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
+header .flex .profile .account a {
+  color: var(--black);
+}
+
+header .flex .profile .account a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+/******************************nagłówek koniec*****************************/
+
+#menu-btn {
+  display: none;
+}
+
+/******************************** strona home ************************************/
+
+.home .slide {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  align-items: center;
+}
+
+.home .slide .content {
+  flex: 1 1 20rem;
+  text-align: center;
+}
+
+.home .slide .image {
+  text-align: center;
+  flex: 1 1 20rem;
+}
+
+.home .slide .image img {
+  width: 80%;
+}
+
+.home .slide .content span {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.home .slide .content h3 {
+  margin: 1rem 0;
+  font-size: 4rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+/************************************************* strona home koniec ***************************/
+
+/***************************************** Kategorie jedzenia start ***********************************************/
+
+.home-category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.home-category .box-container .box {
+  border: var(--border);
+  padding: 5rem;
+  text-align: center;
+}
+
+.home-category .box-container .box h3 {
+  font-size: 4rem;
+  color: var(--black);
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.home-category .box-container .box:hover {
+  background-color: var(--black);
+}
+
+.home-category .box-container .box:hover h3 {
+  color: white;
+}
+
+/***************************************** Kategorie jedzenia koniec ***********************************************/
+
+/***************************************** Produkty start ***********************************************/
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 34rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.products .box-container .box {
+  padding: 2rem;
+  position: relative;
+  border: var(--border);
+  border-radius: 3rem;
+  background-color: var(--antiquewhite);
+}
+
+.products .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.products .box-container .box .fa-eye,
+.products .box-container .box .fa-shopping-cart {
+  position: absolute;
+  top: 1rem;
+  height: 4, 5rem;
+  width: 4, 5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border: var(--border);
+  background-color: var(--white);
+  line-height: 4.3rem;
+  color: var(--black);
+  text-align: center;
+  transition: 0.2s linear;
+}
+
+.products .box-container .box .fa-eye:hover,
+.products .box-container .box .fa-shopping-cart:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.products .box-container .box .fa-eye {
+  left: 1rem;
+}
+
+.products .box-container .box .fa-shopping-cart {
+  right: 1rem;
+}
+
+.products .box-container .box .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--red);
+  color: var(--white);
+  border: var(--border);
+  border-radius: 1rem;
+  line-height: 4rem;
+  height: 4.3rem;
+  width: 4.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.products .box-container .box .fa-times:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.products .box-container .box .sub-total {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.products .box-container .box .sub-total span {
+  color: var(--red);
+}
+
+.products .box-container .box .cat {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.products .box-container .box .cat:hover {
+  color: var(--light-color);
+  text-decoration: underline;
+}
+
+.products .box-container .box .name {
+  font-size: 2rem;
+  color: var(--black);
+  margin: 1rem 0;
+}
+
+.products .box-container .box .footer .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.products .box-container .box .flex {
+  display: flex;
+  gap: 1, 5rem;
+  align-items: center;
+}
+
+.products .box-container .box .flex .price {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-right: auto;
+}
+
+.products .box-container .box .flex .price span {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.products .box-container .box .flex .qty {
+  padding: 1rem;
+  border: var(--border);
+  font-size: 1.8rem;
+  color: var(--black);
+  border-radius: 2rem;
+}
+
+/***************************************** Produkty koniec ***********************************************/
+
+.products .cart-total {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+  border: var(--border);
+  padding: 1rem;
+}
+
+.products .cart-total p {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.products .cart-total p span {
+  color: var(--red);
+}
+
+.products .cart-total .btn {
+  margin-top: 0;
+}
+
+/***************************************** Zamówienia start ***********************************************/
+
+.orders .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.orders .box-container .box {
+  padding: 1rem 2rem;
+  background-color: var(--gray);
+  flex: 1 1 40rem;
+  border-radius: 5rem;
+  max-width: 37rem;
+}
+
+.orders .box-container .box p {
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: var(--yellow);
+}
+
+.orders .box-container .box p span {
+  color: var(--white);
+}
+
+.orders .box-container .box .drop-down {
+  width: 100%;
+  margin: 1rem 0;
+  background-color: var(--yellow);
+  padding: 1rem 1.4rem;
+  font-size: 2rem;
+  color: var(--black);
+  border: var(--border);
+  border-radius: 0.5rem;
+}
+
+/***************************************** Zamówienia koniec ***********************************************/
+
+.cards .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.cards .box-container .box {
+  padding: 1rem 2rem;
+  background-color: var(--antiquewhite);
+  flex: 1 1 40rem;
+  border-radius: 5rem;
+  text-align: center;
+  border: var(--border);
+  max-width: 37rem;
+}
+
+.cards .box-container .box .number {
+  font-size: 10rem;
+  color: var(--black);
+}
+
+.cards .box-container .box .status {
+  font-size: 3rem;
+}
+
+/***************************************** Podsumowanie start ***********************************************/
+
+/***************************************** Admin start ***********************************************/
+
+.accounts .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.accounts .box-container .box {
+  background-color: var(--white);
+  border-radius: 3rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  padding: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.accounts .box-container .box p {
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.accounts .box-container .box p span {
+  color: var(--main-color);
+}
+
+/***************************************** Admin koniec ***********************************************/
+.checkout form {
+  max-width: 50rem;
+  margin: 0 auto;
+  border: var(--border);
+  padding: 2rem;
+}
+
+.checkout form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  padding: 2rem 0;
+  color: var(--black);
+}
+
+.checkout form .cart-items {
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.checkout form .cart-items h3 {
+  color: var(--black);
+}
+
+.checkout form .cart-items p {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.checkout form .cart-items p .name {
+  color: var(--black);
+}
+
+.checkout form .cart-items p .price {
+  color: var(--black);
+}
+
+.checkout form .cart-items .grand-total {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.checkout form .cart-items .grand-total .price {
+  color: var(--red);
+}
+
+.checkout form .user-info p {
+  font-size: 2rem;
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.checkout form .user-info p i {
+  color: var(--light-color);
+  margin-right: 1rem;
+}
+
+.checkout form .user-info p span {
+  color: var(--black);
+}
+
+.checkout form .user-info .box {
+  width: 100%;
+  border: var(--border);
+  padding: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/***************************************** Podsumowanie koniec ***********************************************/
+
+.products .more-btn {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.products .more-btn > a {
+  display: inline-block;
+}
+
+/***************************************** kontakt start ***********************************************/
+
+.search-form form {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.search-form form .box {
+  width: 100%;
+  border: var(--border);
+  border-radius: 2rem;
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.search-form form .fa-search {
+  width: 6rem;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+}
+
+.search-form form .fa-search:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+/***************************************** Podgląd start ***********************************************/
+
+.quick-view .box {
+  margin: 0 auto;
+  max-width: 50rem;
+  border: var(--border);
+  border-radius: 5rem;
+  background-color: var(--antiquewhite);
+  padding: 2rem;
+}
+
+.quick-view .box img {
+  width: 100%;
+  height: 30rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.quick-view .box .cat {
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.quick-view .box .cat:hover {
+  text-decoration: underline;
+  color: var(--red);
+}
+
+.quick-view .box .name {
+  font-size: 2rem;
+  color: var(--black);
+  margin: 1rem 0;
+}
+
+.quick-view .box .flex {
+  display: flex;
+  gap: 1, 5rem;
+  align-items: center;
+}
+
+.quick-view .box .flex .price {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-right: auto;
+}
+
+.quick-view .box .flex .price span {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.quick-view .box .flex .qty {
+  padding: 1rem;
+  border: var(--border);
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+/***************************************** Podgląd koniec ***********************************************/
+
+.disabled {
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+}
+
+/***************************************** Rejestracja start ***********************************************/
+
+.form-container form {
+  border: var(--border);
+  border-radius: 3rem;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-container form h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.form-container form .box {
+  margin: 1rem 0;
+  width: 100%;
+  border: var(--border);
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.form-container form p {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.form-container form img {
+  height: 25rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.form-container form span {
+  font-size: 1.7rem;
+  color: var(--black);
+}
+
+/***************************************** Rejestracja koniec ***********************************************/
+
+/***************************************** Profil start ***********************************************/
+
+.user-profile .box {
+  border: var(--border);
+  padding: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.user-profile .box p {
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.user-profile .box p i {
+  color: var(--light-color);
+  margin-right: 0.7rem;
+}
+
+.user-profile .box p span {
+  color: var(--black);
+}
+
+/***************************************** Profil koniec ***********************************************/
+
+/******************************************** Stopka start *****************************************/
+
+.footer {
+  background-color: #777;
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.footer .grid .box {
+  background-color: #777;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer .grid .box img {
+  height: 10rem;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.footer .grid .box h3 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.footer .grid .box p,
+.footer .grid .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+
+.footer .grid .box a:hover {
+  text-decoration: underline;
+}
+
+/******************************************************* Stopka koniec ************************************/
+
+/****************************************** media responsywność ******************************************************/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .slide .content h3 {
+    font-size: 4rem;
+  }
+
+  .home .slide .image img {
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 836px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    background-color: var(--white);
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+
+  .header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .header .flex .logo {
+    font-size: 2rem;
+  }
+
+  .home .slide .content h3 {
+    font-size: 5rem;
+  }
+
+  .products .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h3 {
+    font-size: 3.5rem;
+  }
+
+  .products .cart-total {
+    padding: 1.5rem;
+    justify-content: center;
+  }
+
+  .flex-btn {
+    flex-flow: column;
+    gap: 0;
+  }
+
+  header .flex .pot {
+    width: 8rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+  }
+}
